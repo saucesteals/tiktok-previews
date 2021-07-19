@@ -1,2 +1,2 @@
 service: yarn start
-web: echo "I don't want a web process"
+web: echo "Disable this dyno, then enable the service dyno below me"
