@@ -8,7 +8,7 @@
 
 ### **Public Bot**
 
-* [Invite our publicly hosted bot](https://discord.com/oauth2/authorize?client_id=866304561017913354&scope=bot&permissions=379968)
+* [Invite our publicly hosted bot](https://discord.com/oauth2/authorize?client_id=866304561017913354&scope=bot&permissions=388176)
 
 
 ### **Heroku**
