@@ -1,8 +1,11 @@
 
 <img src="https://socialify.git.ci/saucesteals/tiktok-previews/image?description=1&font=Inter&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Dark" alt="tiktok-previews" width="1040" height="320"  />
 
-<p style="font-size:40px;margin:0" align="center"><b>Welcome to Tiktok Previews 👋</b></p>
-<p style="font-size:20px" align="center">Automatically send in-app videos of tiktoks sent in any chat!<p>
+<h2 align="center">
+<b>🎵 Welcome to Tiktok Previews 🎵</b>
+<p align="center">In-app videos of tiktoks sent in any chat!<p>
+</h2>
+
 
 ## **⚙️ Installation**
 
