@@ -13,8 +13,9 @@
 
 ### **Heroku**
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews)
-
+<a target="_blank" href="https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews">
+    <img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg">
+</a>
 
 * Click the [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews) button above
 * Enter your discord bot's token as prompted
