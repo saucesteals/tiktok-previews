@@ -13,7 +13,7 @@
 
 ### **Heroku**
 
-<a target="_blank" href="https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews">
+<a href="https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews" target="_blank">
     <img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg">
 </a>
 
