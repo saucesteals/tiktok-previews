@@ -1,5 +1,5 @@
 import { AssertionError } from "assert";
-import NetType, { AddressInfo } from "net";
+import NetType from "net";
 import consola from "consola";
 
 export const assert = <T>(value: T, errorMessage: string): NonNullable<T> => {
@@ -9,20 +9,14 @@ export const assert = <T>(value: T, errorMessage: string): NonNullable<T> => {
 
 export const createDummyServer = (port: string) => {
   const Net: typeof NetType = require("net");
-  const server = new Net.Server();
-  server
-    .listen(port, () => {
-      consola.info(`Listening to dummy server on port ${port}`);
-    })
+  new Net.Server()
     .on("connection", (socket) => {
       socket.end(
-        "HTTP/1.1 301 Moved Permanently\nLocation:https://github.com/saucesteals/tiktok-previews"
+        "HTTP/1.0 301 Moved Permanently\r\nLocation: https://github.com/saucesteals/tiktok-previews\r\n\r\n"
       );
-
-      consola.info(
-        `Redirected ${
-          (socket.address() as AddressInfo).address
-        } on dummy server`
-      );
+      consola.info(`Redirected on dummy server`);
+    })
+    .listen(port, () => {
+      consola.info(`Listening to dummy server on port ${port}`);
     });
 };
