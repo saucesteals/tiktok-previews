@@ -1,6 +1,5 @@
 {
   "env": {
-    "browser": true,
     "es6": true,
     "node": true
   },
@@ -25,7 +24,8 @@
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
-    "@typescript-eslint/no-non-null-assertion": "off"
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-var-requires": "off"
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",

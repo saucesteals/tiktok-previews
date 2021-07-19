@@ -1,9 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires  */
 require("dotenv").config();
 import { Intents } from "discord.js";
 import TiktokClient from "./structures/client";
-import { assert } from "./utils/etc";
+import { assert, createDummyServer } from "./utils/etc";
 import consola from "consola";
+
+if (process.env.PORT) {
+  createDummyServer(process.env.PORT);
+}
 
 const client = new TiktokClient({
   intents:
