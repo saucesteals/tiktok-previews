@@ -37,6 +37,15 @@ export default class TiktokManager {
     })
   );
 
+  constructor() {
+    this.updateCookies();
+  }
+
+  public async updateCookies(): Promise<void> {
+    await this.http({ url: "https://www.tiktok.com/" });
+    return;
+  }
+
   public async getVideoSourceAddr(videoUrl: string): Promise<string | null> {
     const resp: AxiosResponse<string> = await this.http({ url: videoUrl });
 
