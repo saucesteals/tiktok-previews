@@ -13,10 +13,8 @@
 
 ### **Heroku**
 
-<a href="https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews" target="_blank">
-    <img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg">
-</a>
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews)
 * Click the [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews) button above
 * Enter your discord bot's token as prompted
 * Create your app and enjoy :)
