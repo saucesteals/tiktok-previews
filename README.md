@@ -52,15 +52,15 @@ yarn start
 
 
 ## **🕹️ Usage**
-
-1. Make sure the bot has the following permissions in the channels you want it to work in:
+1. Invite the bot
+2. Make sure the bot has the following permissions in the channels you want it to work in:
       - View Channel
       - Send Messages
       - Embed Links
       - Attach Files
       - Read Message History
  
-2. Send a link to any tiktok
+3. Send a link to any tiktok
 
 ## **🤝 Contributing**
 
