@@ -13,6 +13,11 @@ const client = new TiktokClient({
 
 client.on("ready", () => {
   consola.info("Ready as", client.user?.username);
+
+  client.user!.setActivity({
+    type: "WATCHING",
+    name: "your tiktoks",
+  });
 });
 
 client.login(

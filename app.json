@@ -1,0 +1,14 @@
+{
+  "name": "Tiktok Previews",
+  "description": "Automatically send in-app videos of tiktoks sent in any chat!",
+  "repository": "https://github.com/saucesteals/tiktok-previews",
+  "logo": "https://i.imgur.com/knFWOTZ.jpg",
+  "keywords": ["node", "discord", "tiktok"],
+  "success_url": "/",
+  "env": {
+    "DISCORD_BOT_TOKEN": {
+      "description": "The token for your discord bot",
+      "value": "xxx.xxxx_x.xxxxx"
+    }
+  }
+}

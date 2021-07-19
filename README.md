@@ -1,12 +1,24 @@
-# Tiktok Previews
-## _Automatically send in-app videos of tiktoks sent in any chat!_
 
----
+<img src="https://socialify.git.ci/saucesteals/tiktok-previews/image?description=1&font=Inter&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Dark" alt="tiktok-previews" width="1040" height="320"  />
 
-## 
+<p style="font-size:40px;margin:0" align="center"><b>Welcome to Tiktok Previews 👋</b></p>
+<p style="font-size:20px" align="center">Automatically send in-app videos of tiktoks sent in any chat!<p>
 
-## Installation  ⚙️
+## **⚙️ Installation**
 
+## Public Bot
+* [Invite our publicly hosted bot](https://discord.com/oauth2/authorize?client_id=866304561017913354&scope=bot&permissions=379968)
+
+## Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews)
+
+
+* Click the [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews) button above
+* Enter your discord bot's token as prompted
+* Create your app and enjoy :)
+
+## Manual
 Tiktok Previews requires [Node.js](https://nodejs.org/) to run.
 
 Install the dependencies.
@@ -38,7 +50,7 @@ yarn start
 ```
 
 
-## Usage
+## **🕹️ Usage**
 
 1. Make sure the bot has the following permissions in the channels you want it to work in:
       - View Channel
@@ -49,7 +61,7 @@ yarn start
  
 2. Send a link to any tiktok
 
-## Contributing
+## **🤝 Contributing**
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -60,6 +72,6 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-## License
+## **📝 License**
 
 Distributed under the MIT License. See `LICENSE` for more information.
