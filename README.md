@@ -6,11 +6,13 @@
 
 ## **⚙️ Installation**
 
-## Public Bot
+### **Public Bot**
+
 * [Invite our publicly hosted bot](https://discord.com/oauth2/authorize?client_id=866304561017913354&scope=bot&permissions=379968)
 
-## Heroku
 
+### **Heroku**
+\
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/saucesteals/tiktok-previews)
 
 
@@ -18,7 +20,7 @@
 * Enter your discord bot's token as prompted
 * Create your app and enjoy :)
 
-## Manual
+### **Manual**
 Tiktok Previews requires [Node.js](https://nodejs.org/) to run.
 
 Install the dependencies.
