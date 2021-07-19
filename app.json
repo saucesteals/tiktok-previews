@@ -4,7 +4,6 @@
   "repository": "https://github.com/saucesteals/tiktok-previews",
   "logo": "https://i.imgur.com/knFWOTZ.jpg",
   "keywords": ["node", "discord", "tiktok"],
-  "success_url": "/",
   "env": {
     "DISCORD_BOT_TOKEN": {
       "description": "The token for your discord bot",
