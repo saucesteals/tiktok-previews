@@ -3,7 +3,7 @@
 
 <h2 align="center">
 <b>🎵 Welcome to Tiktok Previews 🎵</b>
-<p align="center">In-app videos of tiktoks sent in any chat!<p>
+<p>In-app videos of tiktoks sent in any chat!<p>
 </h2>
 
 
