@@ -1,5 +1,6 @@
 import axios, { AxiosInstance, AxiosResponse } from "axios";
 import axiosCookieJarSupport from "axios-cookiejar-support";
+import consola from "consola";
 import Stream from "stream";
 import { CookieJar } from "tough-cookie";
 import { TiktokMatch } from "../utils/tiktok";
@@ -43,6 +44,7 @@ export default class TiktokManager {
 
   public async updateCookies(): Promise<void> {
     await this.http({ url: "https://www.tiktok.com/" });
+    consola.success("Updated cookies");
     return;
   }
 
