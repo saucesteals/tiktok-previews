@@ -1,6 +1,6 @@
 {
   "name": "tiktok-previews",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tiktok Previews in Discord chats!",
   "main": "src/index.ts",
   "repository": "https://github.com/saucesteals/tiktok-previews",

@@ -1,7 +1,8 @@
-import { TiktokMatch } from "../utils/tiktok";
-import { Client, ClientOptions, Message } from "discord.js";
+import { Colors, TiktokMatch } from "../utils/tiktok";
+import { Client, ClientOptions, Message, MessageEmbed } from "discord.js";
 import TiktokManager from "./tiktok";
 import consola from "consola";
+import { InvitePermissions } from "../utils/etc";
 
 export default class TiktokClient extends Client {
   public manager: TiktokManager = new TiktokManager();
@@ -12,6 +13,12 @@ export default class TiktokClient extends Client {
     this.on("messageCreate", this.$onMessage.bind(this));
   }
 
+  public getInviteUrl(): string {
+    return `https://discord.com/oauth2/authorize?client_id=${
+      this.user?.id
+    }&scope=bot&permissions=${InvitePermissions.toString()}`;
+  }
+
   private $onMessage(message: Message): void {
     if (message.author.bot || !message.guild) return;
 
@@ -19,6 +26,15 @@ export default class TiktokClient extends Client {
 
     if (tiktokUrl) {
       this.processTiktokRequest(message, tiktokUrl);
+      return;
+    }
+
+    if (message.mentions.users.has(this.user!.id)) {
+      const embed = new MessageEmbed()
+        .setColor(Colors.Pink)
+        .setDescription(`[Invite Me!](${this.getInviteUrl()})`);
+      message.reply({ embeds: [embed] });
+      return;
     }
 
     return;
