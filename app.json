@@ -10,11 +10,5 @@
       "description": "The token for your discord bot",
       "value": "xxx.xxxx_x.xxxxx"
     }
-  },
-  "formation": {
-    "web": {
-      "quantity": 0,
-      "size": "free"
-    }
   }
 }
