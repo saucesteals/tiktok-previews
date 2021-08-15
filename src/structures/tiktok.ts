@@ -53,7 +53,10 @@ export default class TiktokManager {
 
     const playAddrMatch = TiktokMatch.playAddr.exec(resp.data);
 
-    return playAddrMatch && playAddrMatch[1].replace(/\\u0026/g, "&");
+    return (
+      playAddrMatch &&
+      playAddrMatch[1].replace(/\\u0026/g, "&").replace(/\\u002F/g, "&")
+    );
   }
 
   public async getVideoStream(videoUrl: string): Promise<Stream> {

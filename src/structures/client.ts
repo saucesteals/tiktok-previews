@@ -59,7 +59,7 @@ export default class TiktokClient extends Client {
       consola.success(
         `[${message.guild?.name}] [${message.author.tag}] Processed tiktok request for ${url}`
       );
-    } catch (err) {
+    } catch (err: any) {
       consola.error(err);
       message.reply("Something went wrong! ```" + err.message + "```");
     }
