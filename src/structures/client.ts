@@ -29,7 +29,7 @@ export default class TiktokClient extends Client {
       return;
     }
 
-    if (message.mentions.users.has(this.user!.id)) {
+    if (message.content.includes(this.user!.id)) {
       const embed = new MessageEmbed()
         .setColor(Colors.Pink)
         .setDescription(`[Invite Me!](${this.getInviteUrl()})`);
