@@ -59,6 +59,8 @@ export default class TiktokClient extends Client {
       consola.success(
         `[${message.guild?.name}] [${message.author.tag}] Processed tiktok request for ${url}`
       );
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       consola.error(err);
       message.reply("Something went wrong! ```" + err.message + "```");
