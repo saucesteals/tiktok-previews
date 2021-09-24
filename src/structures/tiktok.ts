@@ -33,7 +33,6 @@ export default class TiktokManager {
   private http: AxiosInstance = axiosCookieJarSupport(
     axios.create({
       headers: DEFAULT_HEADERS,
-      jar: new CookieJar(),
       withCredentials: true,
     })
   );
@@ -42,12 +41,19 @@ export default class TiktokManager {
     this.updateCookies();
 
     /* eslint-disable @typescript-eslint/no-misused-promises */
-    // Update cookies every minute
-    setInterval(this.updateCookies.bind(this), 1000 * 60);
+    // Update cookies every 2 minutes
+    setInterval(this.updateCookies.bind(this), 1000 * 60 * 2);
   }
 
   public async updateCookies(): Promise<void> {
-    await this.http({ url: "https://www.tiktok.com/" });
+    const newJar = new CookieJar();
+
+    await this.http({
+      url: "https://www.tiktok.com/",
+      jar: newJar,
+    });
+
+    this.http.defaults.jar = newJar;
     consola.success("Updated cookies");
     return;
   }
