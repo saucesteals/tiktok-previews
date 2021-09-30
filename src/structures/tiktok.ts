@@ -41,8 +41,8 @@ export default class TiktokManager {
     this.updateCookies();
 
     /* eslint-disable @typescript-eslint/no-misused-promises */
-    // Update cookies every 2 minutes
-    setInterval(this.updateCookies.bind(this), 1000 * 60 * 2);
+    // Update cookies every 60 minutes
+    setInterval(this.updateCookies.bind(this), 1000 * 60 * 60);
   }
 
   public async updateCookies(): Promise<void> {
