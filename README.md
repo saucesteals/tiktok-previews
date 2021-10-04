@@ -1,4 +1,9 @@
-
+___
+## **🚨 Notice**
+### **TIKTOK-PREVIEWS HAS BEEN MOVED TO [PREVIEWER](https://github.com/saucesteals/previewer)**
+### **WHICH HAS SUPPORT FOR MULTIPLE WEBSITES (INCLUDING TIKTOK)**
+___
+\
 <img src="https://socialify.git.ci/saucesteals/tiktok-previews/image?description=1&font=Inter&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Dark" alt="tiktok-previews" width="1040" height="320"  />
 
 <h2 align="center">
